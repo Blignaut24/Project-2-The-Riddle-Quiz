@@ -9,14 +9,13 @@
     <meta name="keywords" content="Online quizzes, Riddle, Puzzle game">
     <!--Links to style.css-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--Links to the Font Awesome Website.-->
+    <!--Links to the Font Awesome Website-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>The Riddle Quiz</title>
 </head>
 <!--This is the Body-->
 
 <body>
-    <!--This is the Header-->
     <header class="main-header">
       <div id="logo">
         <a href="index.html">
@@ -24,41 +23,14 @@
         </a>
       </div>
     </header>
-    <!--The Main Menu-->
+    <!--This is the Menu-->
     <main>
-        <!--This is the Game Dashboard-->
+        <!--This is the High Score Menu-->
         <div class="container">
-            <div id="game" class="justify-center flex-column">
-                <div id="hud">
-                    <div id="hud-item">
-                        <p id="progressText" class="hud-prefix">Riddle</p>
-                        <div id="progressBar">
-                            <div id="progressBarFull"></div>
-                        </div>
-                    </div>
-                    <div id="hud-item">
-                        <p class="hud-prefix">Score</p>
-                        <h1 class="hud-main-text" id="score">0</h1>
-                    </div>
-                </div>
-                <!--This is the Question Area and Answer Buttons-->
-                <h2 id="question">What is the answer to this riddle?</h2>
-                <div class="choice-container">
-                    <p class="choice-prefix">A</p>
-                    <p class="choice-text" data-number="1">Choice 1</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">B</p>
-                    <p class="choice-text" data-number="2">Choice 2</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">C</p>
-                    <p class="choice-text" data-number="3">Choice 3</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">D</p>
-                    <p class="choice-text" data-number="4">Choice 4</p>
-                </div>
+            <div id="highScores" class="flex-center flex-column">
+                <h1 id="finalScore">High Scores</h1>
+                <ul id="highScoresList"></ul>
+                <a class="btn" href="/">Go Home</a>
             </div>
         </div>
     </main>
@@ -88,8 +60,8 @@
             </li>
         </ul>
     </footer>
-    <!--Links to JavaScript-->
-    <script src="assets/js/script.js"></script>
+    <!--Links to javascript-->
+    <script src="assets/js/highscores.js"></script>
 </body>
 
 </html>
