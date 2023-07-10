@@ -25,22 +25,28 @@
       </div>
     </header>
     <!--The Main Menu-->
-    <main>
         <!--This is the Game Dashboard-->
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <div id="hud">
-                    <div id="hud-item">
-                        <p id="progressText" class="hud-prefix">Riddle</p>
-                        <div id="progressBar">
-                            <div id="progressBarFull"></div>
-                        </div>
+              <div id="hud">
+                <div class="hud-item">
+                  <p id="progressText" class="hud-prefix">
+                    Question
+                  </p>
+                  <div id="progressBar">
+                    <div id="progressBarFull">
                     </div>
-                    <div id="hud-item">
-                        <p class="hud-prefix">Score</p>
-                        <h1 class="hud-main-text" id="score">0</h1>
-                    </div>
+                  </div>
                 </div>
+                <div class="hud-item">
+                  <p class="hud-prefix">
+                    Score
+                  </p>
+                  <h1 class="hud-main-text" id="score">
+                    0
+                  </h1>
+              </div>
+        </div> 
                 <!--This is the Question Area and Answer Buttons-->
                 <h2 id="question">What is the answer to this riddle?</h2>
                 <div class="choice-container">
@@ -61,7 +67,6 @@
                 </div>
             </div>
         </div>
-    </main>
     <!--This is the Footer-->
     <footer>
         <!--This is the Social Media Links-->

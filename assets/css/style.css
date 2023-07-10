@@ -214,29 +214,29 @@ input::placeholder {
 #hud {
     display: flex;
     justify-content: space-between;
-}
-
-.hud-prefix {
+  }
+  
+  .hud-prefix {
     text-align: center;
     font-size: 2rem;
-}
-
-.hud-main-text {
+  }
+  
+  .hud-main-text {
     text-align: center;
-}
-
-#progressBar {
+  }
+  
+  #progressBar {
     width: 20rem;
     height: 4rem;
     border: 0.3rem solid #56a5eb;
     margin-top: 1.5rem;
-}
-
-#progressBarFull {
+  }
+  
+  #progressBarFull {
     height: 3.4rem;
     background-color: #56a5eb;
     width: 0%;
-}
+  }
 
 /*Highscore Styling Page*/
 #highScoresList {
