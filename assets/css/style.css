@@ -1,11 +1,13 @@
 /*=====google fonts import=====*/
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=EB+Garamond:wght@500&family=Lora:ital,wght@1,600&family=Montserrat:wght@800&family=Open+Sans&family=Roboto+Flex:wght@500&display=swap');
 
+
 /*=====general styles=====*/
 :root {
     background-color: white;
     font-size: 62.5%;
 }
+
 
 * {
     box-sizing: border-box;
@@ -34,7 +36,7 @@ h1 {
 
 h1>span {
     font-size: 2.4rem;
-    font-weight: 500;
+    font-weight: 250;
 }
 
 
@@ -52,25 +54,18 @@ h3 {
     font-weight: 500;
 }
 
-#logo-text {
-    font-family: aboreto, Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0.5rem;
-}
-
 
 p {
     font-family: "EB Garamond", Arial, Helvetica, sans-serif;
 }
+
 
 /*=====navbar & logo=====*/
 body {
     margin: 0;
     padding: 0;
 }
+
 
 .navbar {
     display: flex;
@@ -86,13 +81,24 @@ body {
     margin: .5rem;
 }
 
+
+/*logo*/
+#logo-text {
+    font-family: aboreto, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+
 .logo-link {
     text-decoration: none;
 }
 
 
 /*=====Footer=====*/
-
 footer {
     background-color: black; 
     color: white;
@@ -103,6 +109,7 @@ footer {
 footer a {
     text-decoration: none;
 }
+
 
 .footer-container {
     max-width: 1200px;
@@ -142,7 +149,6 @@ footer a {
 
 
 /*=====utilities=====*/
-
 .container {
     width: 100vw;
     height: 75vh;
@@ -218,7 +224,6 @@ footer a {
 
 
 /*=====form=====*/
-
 form {
     width: 100%;
     display: flex;
@@ -228,7 +233,6 @@ form {
 
 
 /*style input form*/
-
 input {
     margin-bottom: 1rem;
     width: 20rem;
@@ -245,7 +249,6 @@ input::placeholder {
 
 
 /*=====game quiz styling page=====*/
-
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -280,7 +283,6 @@ input::placeholder {
 
 
 /*=====feedback question=====*/
-
 .correct {
     background-color: #28a745;
 }
@@ -292,7 +294,6 @@ input::placeholder {
 
 
 /*HUD: head over display*/
-
 #hud {
     display: flex;
     justify-content: space-between;
@@ -326,7 +327,6 @@ input::placeholder {
 
 
 /*=====high score styling page=====*/
-
 #highScoresList {
     list-style: none;
     padding-left: 0;
@@ -346,7 +346,6 @@ input::placeholder {
 
 
 /*=====rules pages=====*/
-
 .rules-container {
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -372,13 +371,76 @@ input::placeholder {
 
 /*=====media queries=====*/
 
-/* media queries - medium devices 768px */
+/* media queries - extra small mobile devices vertical 360px */
+@media screen and (max-width: 360px) {
 
-@media only screen and (max-width: 768px) {
-
-    .footer-main {
-        flex-direction: column;
+    /*index.html*/
+   footer {
+    margin-top: -2%;
+   }
+    
+    /*game.html*/
+    h2#question{
+        font-size: 2rem;
     }
+
+    choice-prefix {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* media queries - extra small mobile devices horizontal 360px */
+@media screen and (max-width: 640px) {
+    /*index.html*/
+     footer {
+        margin-top: 5%;
+    }
+
+    /*game.html*/
+    #game {
+        margin-bottom: 25%;
+    } 
+
+    h2#question{
+        font-size: 2rem;
+    }
+
+    choice-prefix {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    div#game {
+        padding-top: 25%;
+    }
+
+    /*rule.html*/
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}    
+    #home {
+        margin-bottom: 5%;
+    }
+
+   
+
+    /*end.html*/
+    #end {
+        margin-top: 10%;
+    }
+
+    /*high scores*/
+    #highScores {
+        margin-top: 20%;
+    }
+    /*rule.html*/
+    #home {
+        margin-top: 20%;
+    }
+
 }
 
 
