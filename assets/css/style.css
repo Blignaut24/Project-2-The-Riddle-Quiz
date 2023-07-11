@@ -85,7 +85,7 @@ body {
 /*=====Footer=====*/
 
 footer {
-    background-color: black; /*FIXME Change background color to black on font color is fixed*/
+    background-color: black; 
     color: white;
     padding: 4rem 1rem;
 }
@@ -95,12 +95,6 @@ footer a {
     text-decoration: none;
 }
 
-
-footer a:hover {
-    color: #ccc;
-}
-
-
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -109,7 +103,7 @@ footer a:hover {
 
 .footer-main {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -128,23 +122,12 @@ footer a:hover {
 .footer-link {
     display: block;
     width: max-content;
-    padding: 5px 10px;
     margin: 0 auto;
 }
 
 
-.footer-buttom {
-    display: flex;
-}
-
-
-.copyright {
-    margin-right: auto;
-}
-
-
 .footer-social {
-    font-size: 20px;
+    font-size: 12px;
     margin-left: 2rem;
 }
 
@@ -390,36 +373,3 @@ input::placeholder {
 }
 
 
-/*media queries - max-width: 800px*/
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
