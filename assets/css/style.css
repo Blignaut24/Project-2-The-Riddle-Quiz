@@ -443,4 +443,12 @@ h2 {
 
 }
 
+/* media queries - desktops 1281px */
+@media screen and (max-width: 1281px) {
+    /*index.html*/
+    .container{
+        margin-bottom: 125%;
+    }
+}
+
 
