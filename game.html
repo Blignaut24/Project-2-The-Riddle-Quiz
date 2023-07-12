@@ -21,6 +21,10 @@
   <!--This is the Body-->
 
   <body>
+        <!--FIXME Name title: page container-->
+    <div id="page-container">
+<!--FIXME Nmae title: content wrap-->
+   <div id="content-wrap">
    <!-----navbar & logo----->
     <nav class="navbar">
       <div class="brand-title">
@@ -35,13 +39,13 @@
       <div class="container">
         <div id="game" class="justify-center flex-column">
           <div id="hud">
-            <div id="hud-item">
+            <div class="hud-item">
               <p id="progressText" class="hud-prefix">Riddle</p>
               <div id="progressBar">
                 <div id="progressBarFull"></div>
               </div>
             </div>
-            <div id="hud-item">
+            <div class="hud-item">
               <p class="hud-prefix">Score</p>
               <h1 class="hud-main-text" id="score">0</h1>
             </div>
@@ -67,46 +71,54 @@
         </div>
       </div>
     </main>
-    <!--This is the Footer-->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-main">
-          <div class="footer-column">
-            <!-----social media links----->
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit our Facebook page (opens in a new tab)"
-              class="footer-social"
-              ><i
-                class="fa-brands fa-facebook fa-2xl"
-                style="color: #56a5eb"
-              ></i
-            ></a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit our Twitter page (opens in a new tab)"
-              class="footer-social"
-            >
-              <i class="fa-brands fa-twitter fa-2xl" style="color: #056aeb"></i
-            ></a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Visit our YouTube page (opens in a new tab)"
-              class="footer-social"
-            >
-              <i class="fa-brands fa-youtube fa-2xl" style="color: #56a5eb"></i
-            ></a>
+      <!--This is the Footer-->
+      </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-main">
+            <div class="footer-column">
+              <!-----social media links----->
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"
+                class="footer-social"
+                ><i
+                  class="fa-brands fa-facebook fa-2xl"
+                  style="color: #56a5eb"
+                ></i
+              ></a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)"
+                class="footer-social"
+              >
+                <i
+                  class="fa-brands fa-twitter fa-2xl"
+                  style="color: #056aeb"
+                ></i
+              ></a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our YouTube page (opens in a new tab)"
+                class="footer-social"
+              >
+                <i
+                  class="fa-brands fa-youtube fa-2xl"
+                  style="color: #56a5eb"
+                ></i
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer> 
-    <!--Links to JavaScript-->
+      </footer>
+    </div>
+    <!----- links to javascript ----->
     <script src="assets/js/script.js"></script>
   </body>
-</html>
+</html> 

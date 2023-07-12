@@ -59,6 +59,16 @@ p {
     font-family: "EB Garamond", Arial, Helvetica, sans-serif;
 }
 
+/*=====page container=====*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+/*=====content container=====*/
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
 
 /*=====navbar & logo=====*/
 body {
@@ -103,6 +113,10 @@ footer {
     background-color: black; 
     color: white;
     padding: 4rem 1rem;
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
 }
 
 
@@ -442,13 +456,3 @@ h2 {
     }
 
 }
-
-/* media queries - desktops 1281px */
-@media screen and (max-width: 1281px) {
-    /*index.html*/
-    .container{
-        margin-bottom: 125%;
-    }
-}
-
-
