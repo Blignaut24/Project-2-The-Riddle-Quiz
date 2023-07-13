@@ -4,7 +4,7 @@
 
 /*=====general styles=====*/
 :root {
-    background-color: white;
+    background-color: #ffffff;
     font-size: 62.5%;
 }
 
@@ -27,7 +27,7 @@ h4 {
 h1 {
     font-family: montserrat, Arial, Helvetica, sans-serif;
     font-size: 3rem;
-    color: black;
+    color: #000000;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 0.5rem;
@@ -83,8 +83,7 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: black; /*FIXME Change to black*/
-}
+    background-color: black; 
 
 
 .brand-title {
@@ -225,7 +224,7 @@ footer a {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 #56b9eb80;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
