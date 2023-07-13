@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--This is the Header-->
+  <!--head-->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!--Links to the Font Awesome Website-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Challenge your thinking skills and memory with The Riddle Quiz! Solve riddles and have fun while improving your mental acuity. Join the fun and test your wit today!"
+    >
+    <meta name="keywords" content="The Riddle Quiz, riddle, online quiz">
+    <!--links to style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--links to the font awesome website-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    >
     <title>The Riddle Quiz</title>
   </head>
-
-<body>
-          <!--FIXME Name title: page container-->
+  <!--body-->
+  <body>
+    <!--page container: cover entire page-->
     <div id="page-container">
-<!--FIXME Nmae title: content wrap-->
-   <div id="content-wrap">
- <!-----navbar & logo----->
- <nav class="navbar">
-  <div class="brand-title">
-    <a class="logo-link" href="index.html">
-      <h1 id="logo-text">The Riddle Quiz</h1>
-    </a>
-  </div>
-</nav> 
-    <!--This is the Form-->
-    <main>
-        <div class="container">
-          <div id="end" class="flex-center flex-column">
-            <!--This is the display score-->
-            <h1 id="finalScore"></h1>
-            <!--This is the form-->
-            <form>
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="username"
-              >
-              <button
-                type="submit"
-                class="btn"
-                id="saveScoreBtn"
-                onclick="saveHighScore(event)"
-                disabled
-              >
-                Save
-              </button>
-            </form>
-            <!--These are the buttons panel for the play again and go home button-->
-            <a class="btn" href="./game.html" aria-label="Play Again"
-              >Play Again</a
-            >
-            <a class="btn" href="./index.html" aria-label="Go Home">Go Home</a>
+      <!--content wrap-->
+      <div id="content-wrap">
+        <!--navbar & logo-->
+        <nav class="navbar">
+          <div class="brand-title">
+            <a class="logo-link" href="index.html">
+              <h2 id="logo-text">The Riddle Quiz</h2>
+            </a>
           </div>
-        </div>
-    </main>
-         <!--This is the Footer-->
+        </nav>
+        <!--form-->
+        <main>
+          <div class="container">
+            <div id="end" class="flex-center flex-column">
+              <!--display score-->
+              <h2 id="finalScore"></h2>
+              <!--form input-->
+              <form>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="username"
+                >
+                <button
+                  type="submit"
+                  class="btn"
+                  id="saveScoreBtn"
+                  onclick="saveHighScore(event)"
+                  disabled
+                >
+                  Save
+                </button>
+              </form>
+              <!--menu buttons-->
+              <a class="btn" href="./game.html" aria-label="Play Again"
+                >Play Again</a
+              >
+              <a class="btn" href="./index.html" aria-label="Go Home"
+                >Go Home</a
+              >
+            </div>
+          </div>
+        </main>
+        <!--footer-->
       </div>
       <footer>
         <div class="footer-container">
           <div class="footer-main">
             <div class="footer-column">
-              <!-----social media links----->
+              <!--social media links-->
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -105,7 +113,7 @@
         </div>
       </footer>
     </div>
-    <!----- links to javascript ----->
+    <!--links to javascript-->
     <script src="assets/js/end.js"></script>
   </body>
-</html> 
+</html>

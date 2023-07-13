@@ -277,8 +277,6 @@ input::placeholder {
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0.4rem rgb(86, 185, 235, 0.5);
-    /*Note: button hover color settings */
     transform: translate(-0.1rem);
     transition: transform 150ms;
 }
